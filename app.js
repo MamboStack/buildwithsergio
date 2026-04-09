@@ -37,7 +37,7 @@ async function chSend(){
       body:JSON.stringify({system:SYS,contents:contents})
     });
     var d=await r.json();
-    var rep=(d.candidates&&d.candidates[0]&&d.candidates[0].content&&d.candidates[0].content.parts&&d.candidates[0].content.parts[0])?d.candidates[0].content.parts[0].text:'Hubo un error. Escribile a sigonzalezv8@gmail.com';
+    var rep=d.reply||'Hubo un error. Escribile a sigonzalezv8@gmail.com';
     t.remove();
     chHist.push({role:'user',content:text});
     chHist.push({role:'assistant',content:rep});
