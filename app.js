@@ -14,7 +14,7 @@ var SYS="Sos el asistente personal de Sergio González, Product Manager y consul
 "1. Adaptify — Investigación y estrategia para una plataforma SaaS de adaptación creativa inteligente.\n" +
 "2. Winner Group — Ecosistema de referidos automatizado con n8n e integración de modelos de IA.\n" +
 "3. Winner Group — Reducción del 75% en tiempo de producción gráfica mediante automatización de procesos.\n\n" +
-"Contacto: sigonzalezv8@gmail.com · WhatsApp +57 305 751 3238 · https://www.linkedin.com/in/buildwithsergio\n\n" +
+"Contacto: hola@buildwithsergio.com · WhatsApp +57 305 751 3238 · https://www.linkedin.com/in/buildwithsergio\n\n" +
 "Instrucciones: Respondé en español colombiano (trato de 'tú' cercano pero profesional). Máximo 3 párrafos cortos. Si preguntan por trabajo o colaboración, comparte siempre el email y el WhatsApp de una.";
 
 function toggleChat(){chOpen=!chOpen;document.getElementById('chatWin').classList.toggle('open',chOpen);document.getElementById('cbadge').style.display=chOpen?'none':'flex';}
@@ -37,15 +37,15 @@ async function chSend(){
       body:JSON.stringify({system:SYS,contents:contents})
     });
     var d=await r.json();
-    var rep=d.reply||'Hubo un error. Escribile a sigonzalezv8@gmail.com';
+    var rep=d.reply||'Hubo un error. Escribile a hola@buildwithsergio.com';
     t.remove();
     chHist.push({role:'user',content:text});
     chHist.push({role:'assistant',content:rep});
     var b=document.createElement('div');b.className='msg mbot';b.textContent=rep;msgs.appendChild(b);
     var tl=text.toLowerCase();
     if(tl.includes('trabajo')||tl.includes('contratar')||tl.includes('disponible')||tl.includes('llamada')||tl.includes('agendar')){
-      setTimeout(()=>{var c=document.createElement('div');c.className='msg mbot';c.innerHTML='📩 <a href="mailto:sigonzalezv8@gmail.com">sigonzalezv8@gmail.com</a> · <a href="https://wa.me/573057513238" target="_blank">WhatsApp</a>';msgs.appendChild(c);msgs.scrollTop=msgs.scrollHeight;},700);}
-  }catch(e){t.remove();var er=document.createElement('div');er.className='msg mbot';er.textContent='Hubo un problema. Escribile a sigonzalezv8@gmail.com';msgs.appendChild(er);}
+      setTimeout(()=>{var c=document.createElement('div');c.className='msg mbot';c.innerHTML='📩 <a href="mailto:hola@buildwithsergio.com">hola@buildwithsergio.com</a> · <a href="https://wa.me/573057513238" target="_blank">WhatsApp</a>';msgs.appendChild(c);msgs.scrollTop=msgs.scrollHeight;},700);}
+  }catch(e){t.remove();var er=document.createElement('div');er.className='msg mbot';er.textContent='Hubo un problema. Escribile a hola@buildwithsergio.com';msgs.appendChild(er);}
   msgs.scrollTop=msgs.scrollHeight;
 }
 
@@ -180,7 +180,7 @@ function openModal(id) {
     '</div>' +
     sectionsHtml +
     '<div class="mc-cta"><p><strong>¿Te interesa este tipo de trabajo?</strong><br>Estoy disponible para roles PM y proyectos de automatización en LATAM.</p>' +
-    '<a href="mailto:sigonzalezv8@gmail.com" class="btn-p" style="white-space:nowrap;">Contactar →</a></div>';
+    '<a href="mailto:hola@buildwithsergio.com" class="btn-p" style="white-space:nowrap;">Contactar →</a></div>';
 
   document.getElementById('modal').classList.add('active');
   document.getElementById('modalOverlay').classList.add('active');
