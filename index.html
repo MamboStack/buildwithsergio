@@ -5,173 +5,208 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sergio González · Webmaster & Web Product Specialist | Optimización, CRO & UX</title>
   <meta name="description" content="Webmaster y Web Product Specialist especialista en optimización web, CRO, flujos de QA y automatización de procesos. Bogotá, Colombia.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="src/img/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav>
-    <a href="#" class="logo">Sergio Gnzlz.</a>
-    <div class="nav-links">
-      <a href="#sobre">Sobre mí</a>
-      <a href="#portafolio">Portafolio</a>
-      <a href="#stack">Stack</a>
-      <a href="#contacto" class="btn-nav">Contacto</a>
-    </div>
-  </nav>
+<nav>
+  <a href="#" class="nav-logo">Sergio Gnzlz<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#casos">Portafolio</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
 
-  <header class="hero">
-    <div class="hero-vline"></div>
-    <div class="hero-eyebrow">Webmaster & Web Product Specialist | Especialista en Optimización, CRO y Rendimiento Técnico</div>
-    <div class="hero-intro">
-      <div class="hero-photo">
-        <img src="src/img/foto-perfi.jpg" alt="Sergio González">
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-vline"></div>
+  <div class="hero-eyebrow">Webmaster & Web Product Specialist | Especialista en Optimización, CRO y Rendimiento Técnico</div>
+  <div class="hero-intro">
+    <div class="hero-photo">
+      <img src="src/img/foto-perfi.jpg" alt="Sergio González">
+    </div>
+    <div class="hero-text">
+      <h1>Sergio<br><span class="grad">González</span><br></h1>
+      <p class="hero-desc"><strong>9 años</strong> gestionando y optimizando activos digitales. Diseño interfaces centradas en el usuario, aseguro la calidad técnica (QA) y construyo sistemas automatizados enfocados en acelerar la conversión de negocio.</p>
+      <div class="hero-ctas">
+        <a href="#casos" class="btn-p">Ver portafolio</a>
+        <a href="#contacto" class="btn-g">Conversemos</a>
       </div>
-      <div class="hero-text">
-        <h1>Sergio<br><span class="grad">González</span><br></h1>
-        <p class="hero-desc"><strong>9 años</strong> gestionando y optimizando activos digitales. Diseño interfaces centradas en el usuario, aseguro la calidad técnica (QA) y construyo sistemas automatizados enfocados en acelerar la conversión de negocio.</p>
-        <div class="hero-actions">
-          <a href="#portafolio" class="btn-primary">Ver portafolio</a>
-          <a href="#contacto" class="btn-secondary">Conversemos</a>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-indicator"><span>Scroll</span><div class="arrow-down"></div></div>
-  </header>
-
-  <section id="sobre">
-    <div class="reveal">
-      <div class="sec-lbl">Sobre mí</div>
-      <h2>Rendimiento y<br>Optimización</h2>
-      <div class="stats">
-        <div class="stat"><div class="stat-n">9+</div><div class="stat-l">Años en infraestructura digital</div></div>
-        <div class="stat"><div class="stat-n">3</div><div class="stat-l">Sistemas de optimización web</div></div>
-        <div class="stat"><div class="stat-n">n8n</div><div class="stat-l">Integración de APIs & CMS</div></div>
-        <div class="stat"><div class="stat-n">CRO</div><div class="stat-l">UX/UI · QA Técnico · Datos</div></div>
-      </div>
-    </div>
-    <div class="about-body reveal">
-      <p>Durante más de 9 años he liderado la infraestructura digital y la experiencia de usuario de marcas con presencia nacional. Mi enfoque unifica el diseño avanzado de interfaces (UX/UI) con la ingeniería de procesos: administro CMS, ejecuto estrictas pruebas de calidad web (QA), optimizo el posicionamiento técnico (SEO) e integro ecosistemas de automatización basados en n8n e IA para potenciar la captación de leads y maximizar la conversión (CRO).</p>
-      <p>Mi objetivo es ir más allá de la ejecución técnica tradicional: aplico una mirada analítica fundamentada en datos de comportamiento para transformar plataformas estándar en activos de alta conversión estables y escalables.</p>
-    </div>
-  </section>
-
-  <section id="portafolio">
-    <div class="reveal">
-      <div class="sec-lbl">Portafolio</div>
-      <h2>Proyectos reales</h2>
-    </div>
-    
-    <div class="casos">
-      <div class="caso reveal" onclick="openModal('adaptify')">
-        <div class="cn">01</div>
-        <div>
-          <div class="ccat">Optimización de Procesos Web · SaaS · CRO</div>
-          <h3>Adaptify — Plataforma SaaS de adaptación creativa inteligente</h3>
-          <p>Research con 29 diseñadores reales validó que el 43.8% de su jornada se dedica a adaptar piezas manualmente. Diseño de producto SaaS que interpreta archivos .PSD nativos y genera automáticamente todos los formatos requeridos — sin perder fidelidad visual.</p>
-          <div class="ctags"><span>Product Discovery</span><span>User Research</span><span>SaaS</span><span>Roadmap</span><span>OKRs</span></div>
-        </div>
-        <div class="carr">→</div>
-      </div>
-
-      <div class="caso reveal" onclick="openModal('winner')">
-        <div class="cn">02</div>
-        <div>
-          <div class="ccat">Optimización e Integración · Tracking de Leads</div>
-          <h3>Ecosistema de automatización de referidos · Winner Group × n8n</h3>
-          <p>Diseño de ecosistema autónomo con 5 workflows en n8n para gestionar el ciclo completo del referido en 72 casinos: registro, verificación legal, detección de primera visita via QR, reactivación con IA y reportes automáticos a aliados.</p>
-          <div class="ctags"><span>n8n</span><span>WhatsApp API</span><span>OpenAI</span><span>SAP BO</span><span>Product Strategy</span></div>
-        </div>
-        <div class="carr">→</div>
-      </div>
-
-      <div class="caso reveal" onclick="openModal('indesign')">
-        <div class="cn">03</div>
-        <div>
-          <div class="ccat">DesignOps · Control de Calidad · Implementación real</div>
-          <h3>Automatización de producción gráfica para 72 casinos · Winner Group</h3>
-          <p>Iniciativa propio que redujo la producción de 1.500+ imágenes mensuales de 3 semanas con 2 personas a 5 días con 1 persona — sin presupuesto adicional. Sistema de plantillas InDesign con combinación de datos adoptado por todo el equipo.</p>
-          <div class="ctags"><span>Process Improvement</span><span>InDesign</span><span>Iniciativa propia</span><span>-75% tiempo</span></div>
-        </div>
-        <div class="carr">→</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="stack">
-    <div class="reveal">
-      <div class="sec-lbl">Stack</div>
-      <h2>Herramientas</h2>
-    </div>
-    <div class="grid-stack reveal">
-      <div class="st-card"><h3>⚙️ Automatización</h3><p>Uso de n8n para conectar aplicaciones, optimizar flujos QA y automatizar tareas manuales repetitivas.</p></div>
-      <div class="st-card"><h3>🤖 Modelos de IA</h3><p>Integración de modelos de IA vía API para mejorar la eficiencia y el procesamiento de datos en el trabajo.</p></div>
-      <div class="st-card"><h3>📦 Producto & CRO</h3><p>Planeación de tareas, priorización de requerimientos técnicos y medición de resultados analíticos de conversión.</p></div>
-      <div class="st-card"><h3>🎨 Diseño & UX</h3><p>Uso de Figma para crear prototipos de alta fidelidad y validar flujos de usabilidad interactivos.</p></div>
-      <div class="st-card"><h3>🌐 Desarrollo Web</h3><p>Bases sólidas en HTML5, CSS3 y JavaScript para asegurar la calidad del código y la estructura web.</p></div>
-      <div class="st-card"><h3>📊 Analytics</h3><p>Seguimiento de datos mediante GA4 y GTM para entender el comportamiento del usuario y optimizar la conversión.</p></div>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <div class="ci reveal">
-      <div class="sec-lbl">Contacto</div>
-      <h2>Hablemos<br>de tu proyecto</h2>
-      <p>Disponible para roles de Webmaster, Web Product Specialist y proyectos de optimización digital con analítica y conversión. Bogotá — trabajo remoto para LATAM.</p>
-      <div class="c-links">
-        <a href="mailto:hola@buildwithsergio.com">hola@buildwithsergio.com</a>
-        <a href="https://wa.me/573057513238" target="_blank">+57 305 751 3238</a>
-        <a href="https://www.linkedin.com/in/buildwithsergio" target="_blank">www.linkedin.com/in/buildwithsergio</a>
-        <a href="https://neonpixel.com.co" target="_blank">neonpixel.com.co</a>
-      </div>
-    </div>
-    <div class="cf reveal">
-      <p class="cf-txt">¿Tienes un proyecto en mente?<br><span>Usá el chat en la esquina para preguntarme sobre mi perfil, casos o cómo puedo ayudarte. Respondo en minutos.</span></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Sergio González · Todos los derechos reservados</p>
-    <p>Bogotá, Colombia · Disponible remotamente</p>
-  </footer>
-
-  <div class="modal-overlay" id="modal">
-    <div class="modal">
-      <div class="modal-close" onclick="closeModal()">&times;</div>
-      <div class="modal-cat" id="mCat"></div>
-      <h2 id="mTitle"></h2>
-      <div class="modal-tags" id="mTags"></div>
-      <div class="modal-meta" id="mMeta"></div>
-      <div class="modal-desc" id="mDesc"></div>
-      <a href="#" class="btn-primary" id="mLink" style="display:inline-block; margin-top:2rem;">Ver caso completo &rarr;</a>
     </div>
   </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
 
-  <div class="chat-trigger" onclick="tnfCh()"><span class="ch-icon">💬</span><span class="ch-badge">1</span></div>
-  <div class="chat-win" id="chWin">
-    <div class="ch-head">
-      <div class="ch-info">
-        <div class="ch-av">SG</div>
-        <div><p class="ch-name">Asistente de Sergio</p><p class="ch-sub">Webmaster & CRO Specialist</p></div>
-      </div>
-      <div class="ch-cls" onclick="tnfCh()">&times;</div>
-    </div>
-    <div class="ch-msgs" id="chMsgs">
-      <div class="msg bot">¡Hola! Soy el asistente de Sergio González. Puedo contarte sobre su experiencia, proyectos o cómo puede ayudarte. ¿Qué querés saber? 👋</div>
-    </div>
-    <div class="ch-sugs" id="chSugs">
-      <button class="sug" onclick="sndSug(this)">¿Qué hace Sergio?</button>
-      <button class="sug" onclick="sndSug(this)">¿Está disponible?</button>
-      <button class="sug" onclick="sndSug(this)">Ver proyectos</button>
-      <button class="sug" onclick="sndSug(this)">Agendar llamada</button>
-    </div>
-    <div class="ch-inp-box">
-      <input type="text" id="chInp" placeholder="Escribe tu pregunta..." onkeypress="chkEnt(event)">
-      <button onclick="sndMsg()">Enviar</button>
+<section id="sobre">
+  <div class="reveal">
+    <div class="sec-lbl">Sobre mí</div>
+    <h2>Rendimiento y<br>Optimización</h2>
+    <div class="stats">
+      <div class="stat"><div class="stat-n">9+</div><div class="stat-l">Años en infraestructura digital</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Sistemas de optimización web</div></div>
+      <div class="stat"><div class="stat-n">n8n</div><div class="stat-l">Integración de APIs & CMS</div></div>
+      <div class="stat"><div class="stat-n">CRO</div><div class="stat-l">UX/UI · QA Técnico · Datos</div></div>
     </div>
   </div>
+  <div class="about-body reveal">
+    <p>Durante más de 9 años he liderado la infraestructura digital y la experiencia de usuario de marcas con presencia nacional. Mi enfoque unifica el diseño avanzado de interfaces (UX/UI) con la ingeniería de procesos: administro CMS, ejecuto estrictas pruebas de calidad web (QA), optimizo el posicionamiento técnico (SEO) e integro ecosistemas de automatización basados en n8n e IA para potenciar la captación de leads y maximizar la conversión (CRO).</p>
+    <p>Mi objetivo es ir más allá de la ejecución técnica tradicional: aplico una mirada analítica fundamentada en datos de comportamiento para transformar plataformas estándar en activos de alta conversión estables y escalables.</p>
+  </div>
+</section>
+
+<section id="casos">
+  <div class="ch reveal">
+    <div class="sec-lbl">Portafolio</div>
+    <h2>Proyectos reales</h2>
+  </div>
+  <div class="cg">
+    <div class="caso reveal" onclick="openModal('adaptify')">
+      <div class="cn">01</div>
+      <div>
+        <div class="ccat">Optimización de Procesos Web · SaaS · CRO</div>
+        <h3 class="ctit">Adaptify — Plataforma SaaS de adaptación creativa inteligente</h3>
+        <p class="cdesc">Research con 29 diseñadores reales validó que el 43.8% de su jornada se dedica a adaptar piezas manualmente. Diseño de producto SaaS que interpreta archivos .PSD nativos y genera automáticamente todos los formatos requeridos — sin perder fidelidad visual.</p>
+        <div class="ctags"><span class="ctag">Product Discovery</span><span class="ctag">User Research</span><span class="ctag">SaaS</span><span class="ctag">Roadmap</span><span class="ctag">OKRs</span></div>
+        <div class="carr">Ver caso completo →</div>
+      </div>
+    </div>
+    <div class="caso reveal" onclick="openModal('winner')">
+      <div class="cn">02</div>
+      <div>
+        <div class="ccat">Optimización e Integración · Tracking de Leads</div>
+        <h3 class="ctit">Ecosistema de automatización de referidos · Winner Group × n8n</h3>
+        <p class="cdesc">Diseño de ecosistema autónomo con 5 workflows en n8n para gestionar el ciclo completo del referido en 72 casinos: registro, verificación legal, detección de primera visita via QR, reactivación con IA y reportes automáticos a aliados.</p>
+        <div class="ctags"><span class="ctag">n8n</span><span class="ctag">WhatsApp API</span><span class="ctag">OpenAI</span><span class="ctag">SAP BO</span><span class="ctag">Product Strategy</span></div>
+        <div class="carr">Ver caso completo →</div>
+      </div>
+    </div>
+    <div class="caso reveal" onclick="openModal('indesign')">
+      <div class="cn">03</div>
+      <div>
+        <div class="ccat">DesignOps · Control de Calidad · Implementación real</div>
+        <h3 class="ctit">Automatización de producción gráfica para 72 casinos · Winner Group</h3>
+        <p class="cdesc">Iniciativa propia que redujo la producción de 1.500+ imágenes mensuales de 3 semanas con 2 personas a 5 días con 1 persona — sin presupuesto adicional. Sistema de plantillas InDesign con combinación de datos adoptado por todo el equipo.</p>
+        <div class="ctags"><span class="ctag">Process Improvement</span><span class="ctag">InDesign</span><span class="ctag">Iniciativa propia</span><span class="ctag">-75% tiempo</span></div>
+        <div class="carr">Ver caso completo →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="ch reveal">
+    <div class="sec-lbl">Herramientas</div>
+    <h2>Stack de trabajo</h2>
+  </div>
+  <div class="sg">
+    <div class="si reveal">
+      <div class="si-icon">⚙️</div>
+      <div class="si-name">Automatización</div>
+      <div class="si-desc">Uso de n8n para conectar aplicaciones, optimizar flujos QA y automatizar tareas manuales repetitivas.</div>
+    </div>
+    <div class="si reveal">
+      <div class="si-icon">🤖</div>
+      <div class="si-name">Modelos de IA</div>
+      <div class="si-desc">Integración de modelos de IA vía API para mejorar la eficiencia y el procesamiento de datos en el trabajo.</div>
+    </div>
+    <div class="si reveal">
+      <div class="si-icon">📦</div>
+      <div class="si-name">Producto & CRO</div>
+      <div class="si-desc">Planeación de tareas, priorización de requerimientos técnicos y medición de resultados analíticos de conversión.</div>
+    </div>
+    <div class="si reveal">
+      <div class="si-icon">🎨</div>
+      <div class="si-name">Diseño & UX</div>
+      <div class="si-desc">Uso de Figma para crear prototipos de alta fidelidad y validar flujos de usabilidad interactivos.</div>
+    </div>
+    <div class="si reveal">
+      <div class="si-icon">🌐</div>
+      <div class="si-name">Desarrollo Web</div>
+      <div class="si-desc">Bases sólidas en HTML5, CSS3 y JavaScript para asegurar la calidad del código y la estructura web.</div>
+    </div>
+    <div class="si reveal">
+      <div class="si-icon">📊</div>
+      <div class="si-name">Analytics</div>
+      <div class="si-desc">Seguimiento de datos mediante GA4 y GTM para entender el comportamiento del usuario y optimizar la conversión.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="ci reveal">
+    <div class="sec-lbl">Contacto</div>
+    <h2>Hablemos<br>de tu proyecto</h2>
+    <p>Disponible para roles de Webmaster, Web Product Specialist y proyectos de optimización digital con analítica y conversión. Bogotá — trabajo remoto para LATAM.</p>
+    <div class="cls">
+      <a href="mailto:hola@buildwithsergio.com" class="cl"><span class="cl-icon">✉</span> hola@buildwithsergio.com</a>
+      <a href="https://wa.me/573057513238" class="cl" target="_blank"><span class="cl-icon">💬</span> +57 305 751 3238</a>
+      <a href="https://www.linkedin.com/in/buildwithsergio" class="cl" target="_blank"><span class="cl-icon">in</span> www.linkedin.com/in/buildwithsergio</a>
+      <a href="https://neonpixel.com.co" class="cl" target="_blank"><span class="cl-icon">⬡</span> neonpixel.com.co</a>
+    </div>
+  </div>
+  <div class="reveal">
+    <div class="cbox">
+      <h3>¿Tienes un proyecto en mente?</h3>
+      <p>Usá el chat en la esquina para preguntarme sobre mi perfil, casos o cómo puedo ayudarte. Respondo en minutos.</p>
+      <button onclick="toggleChat()" class="btn-p">Abrir chat →</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fc">© 2026 Sergio González · Todos los derechos reservados</div>
+  <div class="fl"><div class="fd"></div> Bogotá, Colombia · Disponible remotamente</div>
+</footer>
+
+<!-- MODAL PORTAFOLIO -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+<div class="modal" id="modal">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeModal()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<!-- CHATBOT -->
+<button class="chat-fab" onclick="toggleChat()" style="position:fixed;">
+  <div class="cbadge" id="cbadge">1</div>
+  <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+</button>
+
+<div class="chat-win" id="chatWin">
+  <div class="ch-head">
+    <div class="ch-info">
+      <div class="ch-av">SG</div>
+      <div><p class="ch-name">Asistente de Sergio</p><p class="ch-sub">Webmaster & CRO Specialist</p></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span class="ch-status">En línea</span>
+      <button class="ch-close" onclick="toggleChat()">×</button>
+    </div>
+  </div>
+  <div class="ch-msgs" id="chMsgs">
+    <div class="msg mbot">¡Hola! Soy el asistente de Sergio González. Puedo contarte sobre su experiencia, proyectos o cómo puede ayudarte. ¿Qué querés saber? 👋</div>
+  </div>
+  <div class="ch-sugs" id="chSugs">
+    <button class="sug" onclick="sndSug(this)">¿Qué hace Sergio?</button>
+    <button class="sug" onclick="sndSug(this)">¿Está disponible?</button>
+    <button class="sug" onclick="sndSug(this)">Ver proyectos</button>
+    <button class="sug" onclick="sndSug(this)">Agendar llamada</button>
+  </div>
+  <div class="ch-irow">
+    <textarea class="ch-inp" id="chInp" placeholder="Escribí tu pregunta..." rows="1" onkeydown="chKey(event)"></textarea>
+    <button class="ch-send" onclick="chSend()"><svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg></button>
+  </div>
+</div>
 
   <script src="app.js"></script>
 </body>
